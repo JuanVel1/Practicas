@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--  #Metadatos -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primera clase Prog III</title>
+</head>
+
+<body>
+    <div style="display: flex; flex-direction: column; margin-bottom: 2em; padding-left: 5em; padding-right: 5em;">
+        <label for="user_name">Nombre</label>
+        <input type="text" name="user_name" id="user_name">
+    </div>
+    <!-- Abreviacion para agregar mas de 2 input:text*2 con label antes label>input:text*2 -->
+    <div style="margin-bottom: 2em; display:flex; flex-direction: column; padding-left: 5em; padding-right: 5em;">
+        <!-- //label>input:text*2' -->
+        <label for="">Apellido</label>
+        <input type="text" name="lastname" id="lastname">
+        <label for="">Edad</label>
+        <input type="text" name="user_age" id="user_age">
+    </div>
+
+    <div>
+        <ul>
+            <li><a href="https://www.google.com" onpointerlockchange="">Link 1</a></li>
+        </ul>
+    </div>
+    <div style="flex-direction: column; display: flex;">
+        <button style="margin: 0.5em;" onclick="captura_valores()">Aceptar</button>
+        <button style="margin: 0.5em;" onclick="clousure_function()">Funcion anonima</button>
+        <button style="margin: 0.5em;" onclick="arrow_function()">Funcion flecha</button>
+    </div>
+</body>
+
+<script src="js/functions.js"></script>
+</html>

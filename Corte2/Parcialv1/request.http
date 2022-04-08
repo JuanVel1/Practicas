@@ -1,0 +1,90 @@
+###
+POST http://localhost:3000/api/v1/facturas/factura HTTP/1.1
+Content-Type: application/json
+
+{
+    "DueDate": "14-03-2022",
+    "DNI": "1053811422",
+    "Status": "Payable",
+    "Line": [{
+            "Amount": 500,
+            "DetailType": "CheapDetail",
+            "ExpenseDetail": {
+                "Customer": {
+                "value": "ABC123",
+                "name": "Sample Customer",
+                "Ref": {
+                    "value": "DEF234",
+                    "name": "Sample Construction"
+                    }
+                },
+                "Account": {
+                    "value": "EFG345",
+                    "name": "Fuel"
+                },
+                "LineStatus": "Billable"
+            }
+            }],
+    "Vendor": {
+        "value": "GHI456",
+        "name": "Sample Bank"
+    },
+    "TotalAmt": 1990.19
+}
+
+###
+
+###
+GET  http://localhost:3000/api/v1/facturas HTTP/1.1
+
+###
+GET  http://localhost:3000/api/v1/facturas/EFG345 HTTP/1.1
+
+###
+
+###
+
+GET  http://localhost:3000/api/v1/facturas/ExpenseDetail HTTP/1.1
+
+###
+
+
+###
+PUT http://localhost:3000/api/v1/facturas/622f91b75d4e5708fbd0bb45 HTTP/1.1
+Content-Type: application/json
+
+{
+    "DueDate": "14-03-2022",
+    "DNI": "456789",
+    "Status": "Payable",
+    "Line": [
+        {
+        "Amount": 1500,
+        "DetailType": "CheapDetail",
+            "CheapDetail": {
+            "Customer": {
+            "value": "fkfkajfkak23",
+            "name": "Sample Customer",
+            "Ref": {
+                "value": "A1L625",
+                "name": "Sample Construction"
+                    }
+            },
+            "Account": {
+                "value": "IU1345",
+                "name": "Fuel"
+            },
+            "LineStatus": "Billable"
+            }
+        }
+    ],
+    "Vendor": {
+        "value": "DHDGA43",
+        "name": "Sample Bank"
+    },
+    "TotalAmt": 230.19
+}
+###
+
+### 
+DELETE  http://localhost:3000/api/v1/facturas/622f77ae0f1c658a5da9f600 HTTP/1.1

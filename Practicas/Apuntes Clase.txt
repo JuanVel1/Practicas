@@ -1,0 +1,42 @@
+-- Clase 1 Programacion III --
+
+Correo profe yaneth.mejia@ucaldas.edu
+cel 3045458490
+
+--Comandos
+* touch - crear archivos ex. touch index.html
+
+Servidor Backend- Gestiona la informacion (Frameworks - PHP(laravel, symphony, codephp) - JS(nodejs) - JAVA(spring, clousure)- PYTHON(flask))
+URI:Lo que va despues de la pagina ex. http://localhost:300/home --> home es la URI
+!(Respuesta HTTP ) - 100...500 (Informativo, todo OK,cambio de URI o URI erronea,no se encuentra recurso, error servidor)
+
+Consumo de API - formato (json, xml)
+¡
+
+Cliente Frontend- puntos terminales -accesos directos - request HTTP (Get, put, post, delete)
+Frameworks cliente(JS([REACT - ANGULAR]Componentes - VUE)) - 
+1.Wireframe(Figma, Adobe xd[ambos generan codigos html y css])
+2.Desing review
+
+Algunos comandos importantes, se trabajo hoy del lado del servidor:
+* npm init --yes
+* npm i express
+* touch index.json* npm i dotenv
+* npm i dotenv
+* cd ..
+* touch .env
+* npm i nodemon -D
+* -D --> se ejecuta una sola vez en ambiente de desarrollo
+* npm run (llamamos el script que se llamo inicialmente start en el arhivo .env) start
+* npm i mongoose
+
+Creacion de variables js
+
+let   -  
+const - 
+
+Diferentes tipos de escritura
+*Snake Clase
+*Camel case 
+    - upper(Mayuscula) - ex. PracticaHTTP01
+    - lower(Minuscula) - ex. Practicahttp01 - para buenas practicas Practica_http_01
